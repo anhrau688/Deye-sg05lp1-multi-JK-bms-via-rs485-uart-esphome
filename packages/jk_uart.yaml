@@ -1,0 +1,541 @@
+binary_sensor:
+  - platform: jk_rs485_bms
+    jk_rs485_bms_id: ${jk_rs485_bms_id}
+    status_balancing:
+      name: "status balancing"
+      device_id: ${device_id}
+    status_precharging:
+      name: "status precharging"     
+      device_id: ${device_id}
+    status_charging:
+      name: "status charging"
+      device_id: ${device_id}
+    status_discharging:
+      name: "status discharging"
+      device_id: ${device_id}
+    status_online:
+      name: "status online"
+      device_id: ${device_id}
+    status_heating:
+      name: "status heating"     
+      device_id: ${device_id}
+    alarm_wireres:
+      name: "alarm WireRes"
+      device_id: ${device_id}
+    alarm_mosotp:
+      name: "alarm MosOTP"
+      device_id: ${device_id}
+    alarm_cellquantity:
+      name: "alarm CellQuantity"
+      device_id: ${device_id}
+    alarm_cursensorerr:
+      name: "alarm CurSensorErr"
+      device_id: ${device_id}
+    alarm_cellovp:
+      name: "alarm CellOVP"
+      device_id: ${device_id}
+    alarm_batovp:
+      name: "alarm BatOVP"
+      device_id: ${device_id}
+    alarm_chocp:
+      name: "alarm ChOCP"
+      device_id: ${device_id}
+    alarm_chscp:
+      name: "alarm ChSCP"
+      device_id: ${device_id}
+    alarm_chotp:
+      name: "alarm ChOTP"
+      device_id: ${device_id}
+    alarm_chutp:
+      name: "alarm ChUTP"
+      device_id: ${device_id}
+    alarm_cpuauxcommuerr:
+      name: "alarm CPUAuxCommuErr"
+      device_id: ${device_id}
+    alarm_celluvp:
+      name: "alarm CellUVP"
+      device_id: ${device_id}
+    alarm_batuvp:
+      name: "alarm BatUVP"
+      device_id: ${device_id}
+    alarm_dchocp:
+      name: "alarm DchOCP"
+      device_id: ${device_id}
+    alarm_dchscp:
+      name: "alarm DchSCP"
+      device_id: ${device_id}
+    alarm_dchotp:
+      name: "alarm DchOTP"
+      device_id: ${device_id}
+    alarm_chargemos:
+      name: "alarm ChargeMOS"
+      device_id: ${device_id}
+    alarm_dischargemos:
+      name: "alarm DischargeMOS"
+      device_id: ${device_id}
+    alarm_gpsdisconneted:
+      name: "alarm GPSDisconneted"
+      device_id: ${device_id}
+    alarm_modifypwdintime:
+      name: "alarm ModifyPWDinTime"
+      device_id: ${device_id}
+    alarm_dischargeonfailed:
+      name: "alarm DischargeOnFailed"
+      device_id: ${device_id}
+    alarm_batteryovertemp:
+      name: "alarm BatteryOverTemp"
+      device_id: ${device_id}
+    alarm_temperaturesensoranomaly:
+      name: "alarm TemperatureSensorAnomaly"
+      device_id: ${device_id}
+    alarm_plcmoduleanomaly:
+      name: "alarm PLCModuleAnomaly"
+      device_id: ${device_id}
+    alarm_mostempsensorabsent:
+      name: "alarm MOSTempSensorAbsent"
+      device_id: ${device_id}
+    alarm_battempsensor1absent:
+      name: "alarm BATTempSensor1Absent"
+      device_id: ${device_id}
+    alarm_battempsensor2absent:
+      name: "alarm BATTempSensor2Absent"
+      device_id: ${device_id}
+    alarm_battempsensor3absent:
+      name: "alarm BATTempSensor3Absent"
+      device_id: ${device_id}
+    alarm_battempsensor4absent:
+      name: "alarm BATTempSensor4Absent"
+      device_id: ${device_id}
+    alarm_battempsensor5absent:
+      name: "alarm BATTempSensor5Absent"
+      device_id: ${device_id}  
+
+sensor:
+  - platform: jk_rs485_bms
+    jk_rs485_bms_id: ${jk_rs485_bms_id}
+    balancing_direction:
+      name: " balancing direction"
+      device_id: ${device_id}
+    cell_voltage_min:
+      name: " cell voltage min"
+      device_id: ${device_id}
+    cell_voltage_max:
+      name: " cell voltage max"
+      device_id: ${device_id}
+    cell_voltage_min_cell_number:
+      name: " cell voltage min cell number"
+      device_id: ${device_id}
+    cell_voltage_max_cell_number:
+      name: " cell voltage max cell number"
+      device_id: ${device_id}
+    cell_delta_voltage:
+      name: " cell delta voltage"
+      device_id: ${device_id}
+    cell_average_voltage:
+      name: " cell average voltage"
+      device_id: ${device_id}
+    cell_resistance_min:
+      name: " cell resistance min"
+      device_id: ${device_id}
+    cell_resistance_max:
+      name: " cell resistance max"      
+      device_id: ${device_id}
+    cell_resistance_min_cell_number:
+      name: " cell resistance min cell number"
+      device_id: ${device_id}
+    cell_resistance_max_cell_number:
+      name: " cell resistance max cell number"    
+      device_id: ${device_id}
+    cell_voltage_01:
+      name: " cell voltage 01"
+      device_id: ${device_id}
+    cell_voltage_02:
+      name: " cell voltage 02"
+      device_id: ${device_id}
+    cell_voltage_03:
+      name: " cell voltage 03"
+      device_id: ${device_id}
+    cell_voltage_04:
+      name: " cell voltage 04"
+      device_id: ${device_id}
+    cell_voltage_05:
+      name: " cell voltage 05"
+      device_id: ${device_id}
+    cell_voltage_06:
+      name: " cell voltage 06"
+      device_id: ${device_id}
+    cell_voltage_07:
+      name: " cell voltage 07"
+      device_id: ${device_id}
+    cell_voltage_08:
+      name: " cell voltage 08"
+      device_id: ${device_id}
+    cell_voltage_09:
+      name: " cell voltage 09"
+      device_id: ${device_id}
+    cell_voltage_10:
+      name: " cell voltage 10"
+      device_id: ${device_id}
+    cell_voltage_11:
+      name: " cell voltage 11"
+      device_id: ${device_id}
+    cell_voltage_12:
+      name: " cell voltage 12"
+      device_id: ${device_id}
+    cell_voltage_13:
+      name: " cell voltage 13"
+      device_id: ${device_id}
+    cell_voltage_14:
+      name: " cell voltage 14"
+      device_id: ${device_id}
+    cell_voltage_15:
+      name: " cell voltage 15"
+      device_id: ${device_id}
+    cell_voltage_16:
+      name: " cell voltage 16"
+      device_id: ${device_id}
+    cell_resistance_01:
+      name: " cell resistance 01"
+      device_id: ${device_id}
+    cell_resistance_02:
+      name: " cell resistance 02"
+      device_id: ${device_id}
+    cell_resistance_03:
+      name: " cell resistance 03"
+      device_id: ${device_id}
+    cell_resistance_04:
+      name: " cell resistance 04"
+      device_id: ${device_id}
+    cell_resistance_05:
+      name: " cell resistance 05"
+      device_id: ${device_id}
+    cell_resistance_06:
+      name: " cell resistance 06"
+      device_id: ${device_id}
+    cell_resistance_07:
+      name: " cell resistance 07"
+      device_id: ${device_id}
+    cell_resistance_08:
+      name: " cell resistance 08"
+      device_id: ${device_id}
+    cell_resistance_09:
+      name: " cell resistance 09"
+      device_id: ${device_id}
+    cell_resistance_10:
+      name: " cell resistance 10"
+      device_id: ${device_id}
+    cell_resistance_11:
+      name: " cell resistance 11"
+      device_id: ${device_id}
+    cell_resistance_12:
+      name: " cell resistance 12"
+      device_id: ${device_id}
+    cell_resistance_13:
+      name: " cell resistance 13"
+      device_id: ${device_id}
+    cell_resistance_14:
+      name: " cell resistance 14"
+      device_id: ${device_id}
+    cell_resistance_15:
+      name: " cell resistance 15"
+      device_id: ${device_id}
+    cell_resistance_16:
+      name: " cell resistance 16"
+      device_id: ${device_id}
+    battery_voltage:
+      name: " battery voltage"
+      device_id: ${device_id}
+    battery_current:
+      name: " battery current"
+      device_id: ${device_id}
+    battery_power:
+      name: " battery power"
+      device_id: ${device_id}
+    battery_power_charging:
+      name: " battery power charging"
+      device_id: ${device_id}
+    battery_power_discharging:
+      name: " battery power discharging"
+      device_id: ${device_id}
+    temperature_sensor_1:
+      name: " temperature sensor 1"
+      device_id: ${device_id}
+    temperature_sensor_2:
+      name: " temperature sensor 2"
+      device_id: ${device_id}
+    temperature_sensor_3:
+      name: " temperature sensor 3"
+      device_id: ${device_id}
+    temperature_sensor_4:
+      name: " temperature sensor 4"
+      device_id: ${device_id}
+    temperature_sensor_5:
+      name: " temperature sensor 5"     
+      device_id: ${device_id}
+    temperature_powertube:
+      name: " temperature powertube"
+      device_id: ${device_id}
+    battery_capacity_state_of_charge:
+      name: " battery capacity state of charge"
+      device_id: ${device_id}
+    battery_capacity_remaining:
+      name: " battery capacity remaining"
+      device_id: ${device_id}
+    charging_cycles:
+      name: " charging cycles"
+      device_id: ${device_id}
+    battery_capacity_total_charging_cycle:
+      name: " battery capacity total charging cycle"
+      device_id: ${device_id}
+    battery_total_runtime:
+      name: " battery total runtime"
+      device_id: ${device_id}
+    balancing_current:
+      name: " balancing current"
+      device_id: ${device_id}
+    errors_bitmask:
+      name: " errors bitmask"
+      device_id: ${device_id}
+    cell_count_real:
+      name: " cell count real"    
+      device_id: ${device_id}
+    smart_sleep_time:
+      name: " smart sleep time"      
+      device_id: ${device_id}
+    powertube_temperature_protection:
+      name: " powertube temperature protection" 
+      device_id: ${device_id}
+    powertube_temperature_protection_recovery:
+      name: " powertube temperature protection recovery"  
+      device_id: ${device_id}
+    battery_total_alarms_count:     
+      name: " battery total alarms count"  
+      device_id: ${device_id}
+    battery_total_alarms_active:     
+      name: " battery total alarms active"     
+      device_id: ${device_id}
+    emergency_time_countdown:
+      name: " emergency time countdown"
+      device_id: ${device_id}
+    uart1_protocol_number:
+      name: " uart1 protocol number"
+      device_id: ${device_id}
+    uart2_protocol_number:
+      name: " uart2 protocol number"
+      device_id: ${device_id}
+    battery_soh_valuation:    
+      name: " battery soh valuation"
+      device_id: ${device_id}
+    discharging_overcurrent_protection_release_time:    
+      name: " discharging overcurrent protection release time"
+      device_id: ${device_id}
+    discharging_short_circuit_protection_release_time:    
+      name: " discharging short circuit protection release time"
+      device_id: ${device_id}
+    charging_overcurrent_protection_release_time:    
+      name: " charging overcurrent protection release time"
+      device_id: ${device_id}
+    charging_short_circuit_protection_release_time:    
+      name: " charging short circuit protection release time"
+      device_id: ${device_id}
+    cell_undervoltage_protection_release_time:    
+      name: " cell undervoltage protection release time"
+      device_id: ${device_id}
+    cell_overvoltage_protection_release_time:    
+      name: " cell overvoltage protection release time"
+      device_id: ${device_id}
+      
+switch:
+  - platform: jk_rs485_bms
+    jk_rs485_bms_id: ${jk_rs485_bms_id}
+    precharging:
+      name: " precharging"
+      device_id: ${device_id}
+    charging:
+      name: " charging"
+      device_id: ${device_id}
+    discharging:
+      name: " discharging"
+      device_id: ${device_id}
+    balancing:
+      name: " balancing"
+      device_id: ${device_id}
+    emergency:
+      name: " emergency"
+      device_id: ${device_id}
+    heating:
+      name: " heating"
+      device_id: ${device_id}
+    display_always_on:
+      name: " display_always_on"
+      device_id: ${device_id}
+    charging_float_mode:
+      name: " charging float mode"
+      device_id: ${device_id}
+    timed_stored_data:
+      name: " timed stored data"
+      device_id: ${device_id}
+    disable_temperature_sensors:
+      name: " disable temperature sensors"
+      device_id: ${device_id}
+    smart_sleep_on:
+      name: " smart sleep on"
+      device_id: ${device_id}
+    disable_pcl_module:
+      name: " disable pcl module"
+      device_id: ${device_id}
+    gps_heartbeat:
+      name: " gps heartbeat"
+      device_id: ${device_id}
+    port_selection:
+      name: " port selection"
+      device_id: ${device_id}
+    special_charger:
+      name: " special charger" 
+      device_id: ${device_id}
+            
+text_sensor:    
+  - platform: jk_rs485_bms
+    jk_rs485_bms_id: ${jk_rs485_bms_id}
+    errors:
+      name: " errors"
+      device_id: ${device_id}
+    operation_status:
+      name: " operation status"
+      device_id: ${device_id}
+    battery_type:
+      name: " battery type"
+      device_id: ${device_id}
+    total_runtime_formatted:
+      name: " total runtime formatted"
+      device_id: ${device_id}
+    info_vendorid:
+      name: " info vendorid"
+      device_id: ${device_id}
+    info_hardware_version:
+      name: " info hardware version"
+      device_id: ${device_id}
+    info_software_version:
+      name: " info software version"
+      device_id: ${device_id}
+    info_device_name:
+      name: " info device name"
+      device_id: ${device_id}
+    info_device_password:
+      name: " info device password"  
+      device_id: ${device_id}
+    network_nodes_available:
+      name: " network nodes available"  
+      device_id: ${device_id}
+    info_device_serial_number:
+      name: " info device serial number"  
+      device_id: ${device_id}
+    info_device_setup_passcode:
+      name: " info device setup passcode"  
+      device_id: ${device_id}
+      
+number:   
+  - platform: jk_rs485_bms
+    jk_rs485_bms_id: ${jk_rs485_bms_id} 
+    cell_smart_sleep_voltage:
+      name: " cell smart sleep voltage"  
+      device_id: ${device_id}
+    cell_undervoltage_protection:
+      name: " cell undervoltage protection"
+      device_id: ${device_id}
+    cell_undervoltage_protection_recovery:
+      name: " cell undervoltage protection recovery"   
+      device_id: ${device_id}
+    cell_overvoltage_protection:
+      name: " cell overvoltage protection"
+      device_id: ${device_id}
+    cell_overvoltage_protection_recovery:
+      name: " cell overvoltage protection recovery"  
+      device_id: ${device_id}
+    cell_balancing_trigger_voltage:
+      name: " cell balancing trigger voltage"   
+      device_id: ${device_id}
+    cell_soc100_voltage:
+      name: " cell soc100 voltage" 
+      device_id: ${device_id}
+    cell_soc0_voltage:
+      name: " cell soc0 voltage" 
+      device_id: ${device_id}
+    cell_request_charge_voltage:
+      name: " cell request charge voltage"  
+      device_id: ${device_id}
+    cell_request_float_voltage:
+      name: " cell request float voltage"  
+      device_id: ${device_id}
+    cell_power_off_voltage:
+      name: " cell power off voltage" 
+      device_id: ${device_id}
+    cell_balancing_starting_voltage:
+      name: " cell balancing starting voltage"     
+      device_id: ${device_id}
+    max_charging_current:
+      name: " max charging current"  
+      device_id: ${device_id}
+    charging_overcurrent_protection_delay:
+      name: " charging overcurrent protection delay"
+      device_id: ${device_id}
+    charging_overcurrent_protection_recovery_delay:
+      name: " charging overcurrent protection recovery delay"    
+      device_id: ${device_id}
+    max_discharging_current:
+      name: " max discharging current"     
+      device_id: ${device_id}
+    discharging_overcurrent_protection_delay:
+      name: " discharging overcurrent protection delay"
+      device_id: ${device_id}
+    discharging_overcurrent_protection_recovery_delay:
+      name: " discharging overcurrent protection recovery delay"
+      device_id: ${device_id}
+    short_circuit_protection_delay:
+      name: " short circuit protection delay"  
+      device_id: ${device_id}
+    short_circuit_protection_recovery_delay:
+      name: " short circuit protection recovery delay"  
+      device_id: ${device_id}
+    max_balancing_current:
+      name: " max balancing current"    
+      device_id: ${device_id}
+    charging_overtemperature_protection:
+      name: " charging overtemperature protection"
+      device_id: ${device_id}
+    charging_overtemperature_protection_recovery:
+      name: " charging overtemperature protection recovery"
+      device_id: ${device_id}
+    discharging_overtemperature_protection:
+      name: " discharging overtemperature protection"
+      device_id: ${device_id}
+    discharging_overtemperature_protection_recovery:
+      name: " discharging overtemperature protection recovery" 
+      device_id: ${device_id}
+    charging_lowtemperature_protection:
+      name: " charging lowtemperature protection"
+      device_id: ${device_id}
+    charging_lowtemperature_protection_recovery:
+      name: " charging lowtemperature protection recovery"
+      device_id: ${device_id}
+    mos_overtemperature_protection:
+      name: " mos overtemperature protection"
+      device_id: ${device_id}
+    mos_overtemperature_protection_recovery:
+      name: " mos overtemperature protection recovery"    
+      device_id: ${device_id}
+    cell_count_settings:
+      name: " cell count settings"
+      device_id: ${device_id}
+    battery_capacity_total_settings:
+      name: " battery capacity total settings"     
+      device_id: ${device_id}
+    precharging_time_from_discharge:
+      name: " precharging time from discharge"  
+      device_id: ${device_id}
+    cell_request_charge_voltage_time:
+      name: " cell request charge voltage time"    
+      device_id: ${device_id}
+    cell_request_float_voltage_time:
+      name: " cell request float voltage time"   
+      device_id: ${device_id}
